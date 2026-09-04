@@ -1,37 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
   // =========================================================================
-  // 1. Selector de Tema (Oscuro / Claro)
+  // 1. Tema Claro Permanente
   // =========================================================================
-  const themeToggle = document.getElementById('theme-toggle');
-  const htmlElement = document.documentElement;
-  const themeIcon = themeToggle ? themeToggle.querySelector('i') : null;
-
-  // Cargar preferencia guardada o respetar la del sistema
-  const savedTheme = localStorage.getItem('theme') || 'dark';
-  htmlElement.setAttribute('data-theme', savedTheme);
-  updateThemeIcon(savedTheme);
-
-  if (themeToggle) {
-    themeToggle.addEventListener('click', () => {
-      const currentTheme = htmlElement.getAttribute('data-theme');
-      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-      
-      htmlElement.setAttribute('data-theme', newTheme);
-      localStorage.setItem('theme', newTheme);
-      updateThemeIcon(newTheme);
-    });
-  }
-
-  function updateThemeIcon(theme) {
-    if (!themeIcon) return;
-    if (theme === 'dark') {
-      themeIcon.className = 'fa-solid fa-moon';
-      themeToggle.setAttribute('title', 'Cambiar a modo claro');
-    } else {
-      themeIcon.className = 'fa-solid fa-sun';
-      themeToggle.setAttribute('title', 'Cambiar a modo oscuro');
-    }
-  }
+  try {
+    localStorage.removeItem('theme');
+    localStorage.setItem('theme', 'light');
+  } catch (e) {}
+  document.documentElement.setAttribute('data-theme', 'light');
 
   // =========================================================================
   // 2. Efecto de Escritura Dinámica (Typing Effect)
@@ -127,13 +102,13 @@ document.addEventListener('DOMContentLoaded', () => {
         
         // Feedback visual
         if (copyIcon) copyIcon.className = 'fa-solid fa-check';
-        if (copyText) copyText.textContent = '¡Copiado!';
+        if (copyText) copyText.textContent = 'Copied!';
         copyBtn.style.backgroundColor = 'var(--primary)';
-        copyBtn.style.color = '#0b0f19';
+        copyBtn.style.color = '#ffffff';
 
         setTimeout(() => {
           if (copyIcon) copyIcon.className = 'fa-regular fa-copy';
-          if (copyText) copyText.textContent = 'Copiar Correo';
+          if (copyText) copyText.textContent = 'Copy Email';
           copyBtn.style.backgroundColor = '';
           copyBtn.style.color = '';
         }, 2200);
@@ -141,9 +116,9 @@ document.addEventListener('DOMContentLoaded', () => {
         // Fallback seleccionando el texto
         emailInput.select();
         document.execCommand('copy');
-        if (copyText) copyText.textContent = '¡Copiado!';
+        if (copyText) copyText.textContent = 'Copied!';
         setTimeout(() => {
-          if (copyText) copyText.textContent = 'Copiar Correo';
+          if (copyText) copyText.textContent = 'Copy Email';
         }, 2000);
       }
     });
