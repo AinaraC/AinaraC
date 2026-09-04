@@ -6,7 +6,7 @@
 <!-- Keywords -->
 <div align="center">
   <img src="https://img.shields.io/badge/Robotics-0284c7?style=for-the-badge&logo=robot&logoColor=white" />
-  <img src="https://img.shields.io/badge/AI-7c3aed?style=for-the-badge&logo=openai&logoColor=white" />
+  <img src="https://img.shields.io/badge/AI-7c3aed?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Edge_AI-0d9488?style=for-the-badge" />
 </div>
 
@@ -34,13 +34,13 @@
 
 #### Artificial Intelligence
 <p>
-  <img src="https://img.shields.io/badge/Computer_Vision-0284c7?style=for-the-badge&logo=opencv&logoColor=white" />
-  <img src="https://img.shields.io/badge/Natural_Language_Processing_(NLP)-7c3aed?style=for-the-badge&logo=openai&logoColor=white" />
-  <img src="https://img.shields.io/badge/Machine_Learning-f59e0b?style=for-the-badge&logo=scikitlearn&logoColor=white" />
-  <img src="https://img.shields.io/badge/Deep_Learning-ec4899?style=for-the-badge&logo=pytorch&logoColor=white" />
-  <img src="https://img.shields.io/badge/Reinforcement_Learning_(RL)-10b981?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/Multimodal_AI-0d9488?style=for-the-badge&logo=meta&logoColor=white" />
-  <img src="https://img.shields.io/badge/Generative_AI-6366f1?style=for-the-badge&logo=google&logoColor=white" />
+  <img src="https://img.shields.io/badge/Computer_Vision-0284c7?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Natural_Language_Processing_(NLP)-7c3aed?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Machine_Learning-f59e0b?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Deep_Learning-ec4899?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Reinforcement_Learning_(RL)-10b981?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Multimodal_AI-0d9488?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Generative_AI-6366f1?style=for-the-badge" />
 </p>
 
 #### Software & Hardware
