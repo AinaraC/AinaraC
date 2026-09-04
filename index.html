@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ainara | Portafolio Profesional - Robótica, IA & Embebidos</title>
+  <meta name="description" content="Portafolio profesional de Ainara. Especializada en Robótica Autónoma, Inteligencia Artificial (VLM), Visión por Computador y Sistemas Embebidos.">
+  
+  <!-- Google Fonts & Iconos -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Estilos principales -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navegación -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-code">&lt;</span>Ainara<span class="logo-code">/&gt;</span>
+      </a>
+
+      <nav class="nav-links" id="nav-links">
+        <a href="#about" class="nav-item">Sobre mí</a>
+        <a href="#skills" class="nav-item">Habilidades</a>
+        <a href="#projects" class="nav-item">Proyectos</a>
+        <a href="#timeline" class="nav-item">Trayectoria</a>
+        <a href="#contact" class="nav-item">Contacto</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="theme-toggle" class="icon-btn" aria-label="Cambiar tema" title="Alternar modo oscuro/claro">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <a href="#contact" class="btn btn-primary btn-sm nav-cta">Hablemos</a>
+        <button id="mobile-menu-btn" class="icon-btn mobile-only" aria-label="Abrir menú">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero-section">
+    <div class="hero-glow"></div>
+    <div class="container hero-content">
+      <div class="status-badge">
+        <span class="pulse-dot"></span> Disponible para proyectos e investigación
+      </div>
+      
+      <h1 class="hero-title">
+        Hola, soy <span class="text-gradient">Ainara</span>
+      </h1>
+      
+      <h2 class="hero-subtitle">
+        <span class="txt-type" data-wait="2500" data-words='["Ingeniería en Robótica & IA", "Sistemas Embebidos & Control Autónomo", "Modelos VLM aplicados a Rovers", "C++ y Python para Robótica"]'></span>
+        <span class="cursor">|</span>
+      </h2>
+      
+      <p class="hero-desc">
+        Desarrollo sistemas inteligentes en la intersección entre el hardware y la inteligencia artificial. Especializada en robótica móvil, navegación autónoma con ROS 2, modelos de visión-lenguaje y firmware en tiempo real para microcontroladores.
+      </p>
+
+      <div class="hero-cta-group">
+        <a href="#projects" class="btn btn-primary">
+          <i class="fa-solid fa-rocket"></i> Ver Proyectos
+        </a>
+        <a href="#contact" class="btn btn-secondary">
+          <i class="fa-regular fa-envelope"></i> Contactar
+        </a>
+        <a href="https://github.com/AinaraC" target="_blank" rel="noopener noreferrer" class="btn btn-outline" id="hero-github-link">
+          <i class="fa-brands fa-github"></i> GitHub
+        </a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat-card">
+          <span class="stat-number">ROS 2</span>
+          <span class="stat-label">Robótica & Simulación</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">VLM & IA</span>
+          <span class="stat-label">Modelos Multimodales</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">STM32 / C++</span>
+          <span class="stat-label">Firmware Embebido</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre Mí -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Presentación</span>
+        <h2 class="section-title">Sobre mí</h2>
+        <p class="section-subtitle">Combinando la ingeniería de hardware con los últimos avances en inteligencia artificial</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card main-bio">
+          <div class="bio-icon">
+            <i class="fa-solid fa-robot"></i>
+          </div>
+          <h3>Ingeniería aplicada a la autonomía y la robótica</h3>
+          <p>
+            Mi trabajo se centra en diseñar e implementar soluciones completas: desde el diseño de firmware a bajo nivel y control en tiempo real, hasta la capa superior de toma de decisiones autónomas con modelos de inteligencia artificial de última generación.
+          </p>
+          <p>
+            Tengo experiencia práctica en el desarrollo de arquitecturas para robótica móvil con <strong>ROS 2</strong>, integración de simulaciones en <strong>Gazebo</strong>, y experimentación con modelos de visión y lenguaje (<strong>VLM</strong>) para la exploración planetaria y navegación inteligente en entornos no estructurados.
+          </p>
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <i class="fa-solid fa-check"></i> Razonamiento espacial multimodal (VLM + SLAM)
+            </div>
+            <div class="highlight-item">
+              <i class="fa-solid fa-check"></i> Microcontroladores ARM Cortex-M (STM32) y FreeRTOS
+            </div>
+            <div class="highlight-item">
+              <i class="fa-solid fa-check"></i> Desarrollo en entornos Linux y contenedores Docker
+            </div>
+          </div>
+        </div>
+
+        <div class="about-pillars">
+          <div class="pillar-card">
+            <div class="pillar-icon"><i class="fa-solid fa-brain"></i></div>
+            <h4>Inteligencia Artificial</h4>
+            <p>Modelos multimodales de visión-lenguaje, procesamiento de imágenes con OpenCV y pipelines con PyTorch.</p>
+          </div>
+          <div class="pillar-card">
+            <div class="pillar-icon"><i class="fa-solid fa-microchip"></i></div>
+            <h4>Sistemas Embebidos</h4>
+            <p>Programación C/C++ bare-metal y RTOS, comunicación CAN, I2C, SPI y diseño de control en tiempo real.</p>
+          </div>
+          <div class="pillar-card">
+            <div class="pillar-icon"><i class="fa-solid fa-compass"></i></div>
+            <h4>Robótica Autónoma</h4>
+            <p>Navegación, cinemática de rovers, mapeo, odometría y arquitecturas distribuidas con ROS 2 Humble.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Habilidades / Tech Stack -->
+  <section id="skills" class="section bg-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Tecnologías</span>
+        <h2 class="section-title">Stack Técnico & Herramientas</h2>
+        <p class="section-subtitle">Tecnologías y lenguajes que utilizo activamente en mis proyectos</p>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Robótica & IA -->
+        <div class="skill-category-card">
+          <div class="category-header">
+            <i class="fa-solid fa-robot"></i>
+            <h3>Robótica & IA</h3>
+          </div>
+          <div class="skills-list">
+            <span class="skill-badge"><i class="fa-solid fa-cube"></i> ROS 2 (Humble)</span>
+            <span class="skill-badge"><i class="fa-solid fa-gamepad"></i> Gazebo</span>
+            <span class="skill-badge"><i class="fa-solid fa-fire"></i> PyTorch</span>
+            <span class="skill-badge"><i class="fa-solid fa-eye"></i> OpenCV</span>
+            <span class="skill-badge"><i class="fa-solid fa-comment-nodes"></i> Modelos VLM / LLM</span>
+            <span class="skill-badge"><i class="fa-solid fa-map"></i> Nav2 / SLAM</span>
+          </div>
+        </div>
+
+        <!-- Lenguajes -->
+        <div class="skill-category-card">
+          <div class="category-header">
+            <i class="fa-solid fa-code"></i>
+            <h3>Lenguajes</h3>
+          </div>
+          <div class="skills-list">
+            <span class="skill-badge"><i class="fa-brands fa-python"></i> Python 3</span>
+            <span class="skill-badge"><i class="fa-solid fa-terminal"></i> C++ (Modern C++17/20)</span>
+            <span class="skill-badge"><i class="fa-solid fa-microchip"></i> C</span>
+            <span class="skill-badge"><i class="fa-solid fa-chart-line"></i> MATLAB</span>
+            <span class="skill-badge"><i class="fa-solid fa-terminal"></i> Bash Scripting</span>
+            <span class="skill-badge"><i class="fa-brands fa-js"></i> JavaScript</span>
+          </div>
+        </div>
+
+        <!-- Hardware & Embebidos -->
+        <div class="skill-category-card">
+          <div class="category-header">
+            <i class="fa-solid fa-bolt"></i>
+            <h3>Hardware & Embebidos</h3>
+          </div>
+          <div class="skills-list">
+            <span class="skill-badge"><i class="fa-solid fa-microchip"></i> STM32 (STM32CubeIDE)</span>
+            <span class="skill-badge"><i class="fa-solid fa-atom"></i> Arduino / ESP32</span>
+            <span class="skill-badge"><i class="fa-solid fa-clock"></i> FreeRTOS</span>
+            <span class="skill-badge"><i class="fa-solid fa-network-wired"></i> CAN / SPI / I2C / UART</span>
+            <span class="skill-badge"><i class="fa-solid fa-plug"></i> Plataformas PlatformIO</span>
+            <span class="skill-badge"><i class="fa-solid fa-compass"></i> IMUs & Encoders</span>
+          </div>
+        </div>
+
+        <!-- Herramientas & Entornos -->
+        <div class="skill-category-card">
+          <div class="category-header">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+            <h3>Herramientas & Flujo</h3>
+          </div>
+          <div class="skills-list">
+            <span class="skill-badge"><i class="fa-brands fa-linux"></i> Linux (Ubuntu)</span>
+            <span class="skill-badge"><i class="fa-brands fa-git-alt"></i> Git & GitHub</span>
+            <span class="skill-badge"><i class="fa-brands fa-docker"></i> Docker</span>
+            <span class="skill-badge"><i class="fa-solid fa-laptop-code"></i> VS Code / Remote WSL</span>
+            <span class="skill-badge"><i class="fa-solid fa-server"></i> CI/CD GitHub Actions</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Proyectos Destacados -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Portafolio</span>
+        <h2 class="section-title">Proyectos Destacados</h2>
+        <p class="section-subtitle">Sistemas, algoritmos y código en los que he trabajado</p>
+      </div>
+
+      <!-- Filtros de Proyectos -->
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="robotics">Robótica & IA</button>
+        <button class="filter-btn" data-filter="embedded">Sistemas Embebidos</button>
+        <button class="filter-btn" data-filter="vision">Visión & Software</button>
+      </div>
+
+      <!-- Grid de Proyectos -->
+      <div class="projects-grid">
+        
+        <!-- Proyecto 1: VLM Rover -->
+        <article class="project-card" data-category="robotics">
+          <div class="project-banner project-banner-rover">
+            <div class="project-icon"><i class="fa-solid fa-satellite-dish"></i></div>
+            <span class="project-badge">Destacado</span>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span>ROS 2</span>
+              <span>VLM (Qwen-VL)</span>
+              <span>Gazebo</span>
+              <span>Python</span>
+            </div>
+            <h3 class="project-title">Exploración Autónoma de Rover con Modelos VLM</h3>
+            <p class="project-desc">
+              Arquitectura de navegación y exploración para rovers autónomos mediante modelos de visión-lenguaje. Integra toma de decisiones basada en razonamiento espacial, procesamiento de imágenes de cámara y generación de rutas en simulación Gazebo.
+            </p>
+            <div class="project-footer">
+              <a href="https://github.com/AinaraC/vlm_rover_exploration" target="_blank" rel="noopener noreferrer" class="btn-link">
+                <i class="fa-brands fa-github"></i> Código en GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Proyecto 2: STM32 Firmware -->
+        <article class="project-card" data-category="embedded">
+          <div class="project-banner project-banner-embedded">
+            <div class="project-icon"><i class="fa-solid fa-microchip"></i></div>
+            <span class="project-badge">Hardware</span>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span>C / C++</span>
+              <span>STM32</span>
+              <span>FreeRTOS</span>
+              <span>Bus CAN</span>
+            </div>
+            <h3 class="project-title">Controlador de Tiempo Real para Actuadores y Sensores</h3>
+            <p class="project-desc">
+              Firmware modular en C++ para microcontroladores STM32 con FreeRTOS. Control de motores con bucles PID en tiempo real, lectura de sensores IMU y encoders, y comunicación segura a través de bus CAN y UART.
+            </p>
+            <div class="project-footer">
+              <a href="https://github.com/AinaraC" target="_blank" rel="noopener noreferrer" class="btn-link">
+                <i class="fa-brands fa-github"></i> Código en GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Proyecto 3: Visión por Computador -->
+        <article class="project-card" data-category="vision">
+          <div class="project-banner project-banner-vision">
+            <div class="project-icon"><i class="fa-solid fa-eye"></i></div>
+            <span class="project-badge">Visión</span>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span>OpenCV</span>
+              <span>PyTorch</span>
+              <span>Python</span>
+              <span>ROS 2</span>
+            </div>
+            <h3 class="project-title">Pipeline de Detección de Obstáculos y Estimación Espacial</h3>
+            <p class="project-desc">
+              Sistema de percepción en tiempo real para robots móviles. Segmentación visual de terreno navegable, detección de obstáculos y cálculo de distancias usando cámaras monoculares/RGB-D con aceleración hardware.
+            </p>
+            <div class="project-footer">
+              <a href="https://github.com/AinaraC" target="_blank" rel="noopener noreferrer" class="btn-link">
+                <i class="fa-brands fa-github"></i> Código en GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Proyecto 4: Telemetría IoT -->
+        <article class="project-card" data-category="embedded">
+          <div class="project-banner project-banner-iot">
+            <div class="project-icon"><i class="fa-solid fa-wifi"></i></div>
+            <span class="project-badge">IoT</span>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span>ESP32</span>
+              <span>MQTT</span>
+              <span>WebSockets</span>
+              <span>Dashboard</span>
+            </div>
+            <h3 class="project-title">Estación de Telemetría y Monitorización Remota</h3>
+            <p class="project-desc">
+              Nodo inalámbrico de adquisición de telemetría robótica con ESP32. Transmisión de estados de batería, cinemática y posición en tiempo real mediante MQTT a un panel web reactivo.
+            </p>
+            <div class="project-footer">
+              <a href="https://github.com/AinaraC" target="_blank" rel="noopener noreferrer" class="btn-link">
+                <i class="fa-brands fa-github"></i> Código en GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Trayectoria / Timeline -->
+  <section id="timeline" class="section bg-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Trayectoria</span>
+        <h2 class="section-title">Formación & Experiencia</h2>
+        <p class="section-subtitle">Un recorrido por mi evolución académica y técnica</p>
+      </div>
+
+      <div class="timeline-container">
+        <!-- Item 1 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2024 - Presente</span>
+            <h3 class="timeline-title">Investigación & Desarrollo en Robótica Autónoma y VLM</h3>
+            <p class="timeline-desc">
+              Desarrollo de algoritmos de navegación basada en modelos multimodales de lenguaje y visión aplicados a rovers de exploración en entornos simulados y reales (ROS 2, Gazebo, Python).
+            </p>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2022 - 2024</span>
+            <h3 class="timeline-title">Desarrollo de Sistemas Embebidos y Control en Tiempo Real</h3>
+            <p class="timeline-desc">
+              Diseño de firmware en C/C++ para plataformas STM32 y microcontroladores, integración de protocolos de comunicaciones industriales y pruebas de hardware-in-the-loop.
+            </p>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Grado / Formación</span>
+            <h3 class="timeline-title">Ingeniería & Especialización Tecnológica</h3>
+            <p class="timeline-desc">
+              Formación rigurosa en fundamentos de computación, arquitectura de procesadores, visión artificial, matemáticas aplicadas y control de sistemas robóticos.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="contact-box">
+        <span class="section-tag">Contacto</span>
+        <h2 class="section-title">¿Tienes un proyecto en mente?</h2>
+        <p class="contact-text">
+          Estoy siempre interesada en colaborar en proyectos innovadores de robótica, visión por computador, modelos de inteligencia artificial y desarrollo embebido.
+        </p>
+
+        <div class="contact-actions">
+          <div class="copy-email-wrapper">
+            <input type="text" value="tu-correo@example.com" id="email-input" readonly>
+            <button id="copy-email-btn" class="btn btn-primary">
+              <i class="fa-regular fa-copy" id="copy-icon"></i>
+              <span id="copy-text">Copiar Correo</span>
+            </button>
+          </div>
+
+          <div class="contact-socials">
+            <a href="https://www.linkedin.com/in/TU_LINKEDIN/" target="_blank" rel="noopener noreferrer" class="social-badge linkedin">
+              <i class="fa-brands fa-linkedin-in"></i> LinkedIn
+            </a>
+            <a href="https://github.com/AinaraC" target="_blank" rel="noopener noreferrer" class="social-badge github">
+              <i class="fa-brands fa-github"></i> GitHub
+            </a>
+            <a href="mailto:tu-correo@example.com" class="social-badge email">
+              <i class="fa-solid fa-envelope"></i> Enviar Email Directo
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© 2026 Ainara. Todos los derechos reservados.</p>
+      <p class="footer-sub">Creado para GitHub Pages & GitHub Profile</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
+
